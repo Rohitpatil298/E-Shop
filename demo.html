@@ -1,0 +1,287 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width , initial-scale=1, shrink-to-fit=no">
+	<title>website</title>
+	<link rel="stylesheet" href="./bootstrap.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+	<link rel="stylesheet" href="./demo.css">
+</head>
+<body>
+	<div class="header">
+	
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand ml-2" href="/">E-Shop</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="./demo.html">Home</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Categories
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="#products">Laptops</a></li>
+					  <li><a class="dropdown-item" href="#products">Phones</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="#products">Electronics</a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="./Cart.html" tabindex="1">
+						cart <i class="add bi bi-cart-plus-fill">
+						<span class="cart-badge badge text-bg-secondary">4</span> </i>
+					</a>
+				  </li>
+				</ul>
+				<form class="search d-flex" role="search">
+				  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				  <button class="btn btn-success" type="submit" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to Search">Search</i></button>
+				</form>
+				<ul class="navbar-nav mx-2 mb-2 mb-lg-0">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  My Account
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="./Cart.html">My Orders</a></li>
+					  <li><a class="dropdown-item" href="#products">Profile</a></li>
+					  <li><hr class="dropdown-divider"></li>
+					  <li><a class="dropdown-item" href="./Login.html">Log out</a></li>
+					</ul>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+	
+</div>
+<!-- ------------------------slider--------------------- -->
+<div id="carouselExampleDark" class="carousel carousel-dark slide mb-3"  data-bs-ride="carousel">
+	<div class="carousel-indicators">
+	  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+	  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+	  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+	</div>
+	<div class="carousel-inner">
+	  <div class="carousel-item active" data-bs-interval="2000">
+		<img src="./image/camera.jpg" onclick="gotoproduct()" class="d-block w-100 img-fluid" alt="...">
+		<div class="carousel-caption d-none d-md-block">
+		  <h5>First slide label</h5>
+		  <p>Some representative placeholder content for the first slide.</p>
+		</div>
+	  </div>		
+	  <div class="carousel-item" data-bs-interval="2000">
+		<img src="./image/headphone1.jpg" onclick="gotoproduct()"  class="d-block w-100 img-fluid" alt="...">
+		<div class="carousel-caption d-none d-md-block">
+		  <h5>Second slide label</h5>
+		  <p>Some representative placeholder content for the second slide.</p>
+		</div>
+	  </div>
+	  <div class="carousel-item" data-bs-interval="2000">
+		<img src="./image/laptop.jpg" onclick="gotoproduct()"  class="d-block w-100 img-fluid" alt="...">
+		<div class="carousel-caption d-none d-md-block">
+		  <h5>Third slide label</h5>
+		  <p>Some representative placeholder content for the third slide.</p>
+		</div>
+	  </div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Next</span>
+	</button>
+  </div>
+<!-- ---------------main-------------------------------	 -->
+<div class="container" >
+	<div id="products" class="row">
+		<h4 class="text-center pb-4 pt-2">Laptops</h4>
+		<div class="card product-items">
+			<img src="./image/laptop10.jpg" onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Laptop</h6>
+			  <h5>Lenovo ipad 3</h5>
+			  <h3 class="card-subtitle mb-4">Price: $280<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="card product-items">
+			<img src="./image/laptop13.jpg" onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Laptop</h6>
+			  <h5>Lenovo ipad 3</h5>
+			  <h3 class="card-subtitle mb-4">Price: $280<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="card product-items">
+			<img src="./image/laptop11.jpg" onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Laptop</h6>
+			  <h5>Acer one 14</h5>
+			  <h3 class="card-subtitle mb-4">Price: $350<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="card product-items">
+			<img src="./image/image11.jpg" onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Laptop</h6>
+			  <h5>Honor Book 14</h5>
+			  <h3 class="card-subtitle mb-4">Price: $260<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <h4 class="text-center pb-4 pt-2">Phones</h4>
+		  <div class="card product-items">
+			<img src="./image/phone1.jpg" onclick="gotoproduct()" class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Phone</h6>
+			  <h5>Iphone 12</h5>
+			  <h3 class="card-subtitle mb-4">Price: $120<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="card product-items">
+			<img src="./image/phone2.jpg"onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Phone</h6>
+			  <h5>Samsung s6</h5>
+			  <h3 class="card-subtitle mb-4">Price: $80<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="card product-items">
+			<img src="./image/phone3.jpg" onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Phone</h6>
+			  <h5>Realme rx</h5>
+			  <h3 class="card-subtitle mb-4">Price: $85<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <div class="card product-items">
+			<img src="./image/phone4.jpg" onclick="gotoproduct()"  class="card-img-top" alt="..."  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Click to see more details">
+			<div class="card-body">
+				<h6 class="card-subtitle mt-2 mb-2 text-muted">Phone</h6>
+			  <h5>Oppo nexa</h5>
+			  <h3 class="card-subtitle mb-4">Price: $105<span><i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+				<i class="bi bi-star-fill"></i>
+			</span></h3>
+			<div class="text-center">
+				<a href="#" class="btn btn-primary" onclick="showtost()">Add to cart</a>
+			  </div>
+			</div>
+		  </div>
+		  	
+		  
+
+		  
+	</div>
+</div>
+<!-- -------------------Fotter------------------------ -->
+<div class="footter mt-auto bg-dark">
+	<div class="container ">
+		<div class="row d-flex">
+			<div class="col">
+				<h5>Categories</h5>
+				<ul>
+					<li type="square">watches</li>
+					<li type="square">Tablets</li>
+					<li type="square">Mobiles</li>
+					<li type="square">Audio</li>
+					<li type="square">Drones</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h5>Useful Links</h5>
+				<ul>
+					<li type="square">Terms</li>
+					<li type="square">Privacy</li>
+					<li type="square">About Us</li>
+					<li type="square">Policy</li>
+					<li type="square">Mission</li>
+				</ul>
+			</div>
+			<div class="col">
+				<h5>Get Updates</h5>
+				<input type="text">
+				<button class="btn btn-primary">Suscribe</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="toast align-items-center text-bg-primary border-0  position-fixed top-0" role="alert" aria-live="assertive" aria-atomic="true">
+	<div class="d-flex">
+	  <div class="toast-body">
+		Hello, The item is Add to cart Sucesfully!!.
+	  </div>
+	  <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+	</div>
+  </div>
+</body>
+<script src="./demo.js"></script>
+
+</html>
